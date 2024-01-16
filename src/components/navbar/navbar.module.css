@@ -1,0 +1,135 @@
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.link:hover{
+    color: #53c28b;
+}
+
+.login {
+    padding: 8px;
+    border: none;
+    background-color: #53c28b;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout {
+    padding: 8px;
+    border: none;
+    background-color: rgb(247, 102, 102);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.avatar {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+/* responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+  }
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .container {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .mobile {
+        position: absolute;
+        right: 40px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+  }
+
+@media only screen and (max-width: 390px) {
+    .links {
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+}

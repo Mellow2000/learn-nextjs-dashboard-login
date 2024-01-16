@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.posts {
+    flex: 1;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 20px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+.imgContainer {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+.img {
+    object-fit: cover;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.delete {
+    cursor: pointer;
+    color: #53c28b;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 80px;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.new {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input, .textArea {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #bbb;
+    border-radius: 4px;
+    color: #bbb;
+    font-size: 20px;
+}
+
+.button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    font-weight: bold;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .posts {
+        flex: 1;
+        margin-top: -60px;
+    }
+
+    .new {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    .post {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 10px;
+        padding: 10px;
+        border: 1px solid #bbb;
+        border-radius: 10px;
+    }
+
+    .imgContainer {
+        width: 180px;
+        height: 100px;
+        position: relative;
+    }
+
+    .img {
+        margin: 10px;
+        width: 150px;
+        height: 80px;
+        object-fit: cover;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .postTitle {
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 5px;
+        padding: 10px;
+        border: 1px solid #bbb;
+        border-radius: 10px;
+    }
+
+    .postTitle:hover {
+        display: flex;
+    }
+
+    .imgContainer {
+        width: 180px;
+        height: 100px;
+        position: relative;
+    }
+
+    .img {
+        margin: 10px;
+        width: 170px;
+        height: 80px;
+        object-fit: cover;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .delete {
+        cursor: pointer;
+        color: #53c28b;
+        font-size: 16px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        position: absolute;
+        flex-wrap: wrap;
+        right: 70px;
+    }
+
+    .postTitle {
+        font-size: 20px;
+    }
+  }
