@@ -31,7 +31,7 @@ const Category = ({ params }) => {
             <Button url="#" text="See More" />
           </div>
           <div className={styles.imgContainer}>
-            <Image className={styles.img} priority={true} alt="img portforio" fill={true} src={item.image} />
+            <Image className={styles.img} height="0" width="0" sizes="100vw" priority={true} alt="img portforio" src={item.image} />
           </div>
         </div>
       ))}
