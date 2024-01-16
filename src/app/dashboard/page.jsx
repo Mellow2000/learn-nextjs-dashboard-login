@@ -30,7 +30,6 @@ const Dashboard = () => {
   // }, []);
 
   const session = useSession();
-
   const router = useRouter();
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -49,6 +48,7 @@ const Dashboard = () => {
   if (session.status === "unauthenticated") {
     router?.push("/dashboard/login");
   }
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -94,7 +94,14 @@ const Dashboard = () => {
             : data?.map((post) => (
                 <div className={styles.post} key={post._id}>
                   <div className={styles.imgContainer}>
-                    <Image src={post.img} alt="img dashboard" width={200} height={100} className={styles.img} />
+                    <Image
+                      src={post.img}
+                      priority={true}
+                      alt="img dashboard"
+                      width={200}
+                      height={100}
+                      className={styles.img}
+                    />
                   </div>
                   <h2 className={styles.postTitle}>{post.title}</h2>
                   <span
@@ -110,7 +117,11 @@ const Dashboard = () => {
           <h1>Add New Post</h1>
           <input type="text" placeholder="Title" className={styles.input} />
           <input type="text" placeholder="Desc" className={styles.input} />
-          <input type="text" placeholder="Image (URL)" className={styles.input} />
+          <input
+            type="text"
+            placeholder="Image (URL)"
+            className={styles.input}
+          />
           <textarea
             placeholder="Content"
             className={styles.textArea}

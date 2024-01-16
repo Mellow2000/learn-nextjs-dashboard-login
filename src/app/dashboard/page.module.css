@@ -66,6 +66,37 @@
     font-weight: bold;
 }
 
+.btnDash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btnDash1 {
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btnDash2 {
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 768px) {

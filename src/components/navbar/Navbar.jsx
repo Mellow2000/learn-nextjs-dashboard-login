@@ -70,6 +70,7 @@ const Navbar = () => {
               <Image
                 src="/User.png"
                 alt="img User"
+                priority={true}
                 width={28}
                 height={28}
                 className={styles.avatar}

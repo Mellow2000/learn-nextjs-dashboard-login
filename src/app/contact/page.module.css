@@ -61,6 +61,14 @@
         gap: 10px;
     }
 
+    .image {
+        object-fit: contain;
+        animation: move 3s infinite ease alternate;
+        width: 300px;
+        height: 300px;
+        margin-top: 80px;
+    }
+
     .title {
         font-size: 50px;
         margin-bottom: 60px;

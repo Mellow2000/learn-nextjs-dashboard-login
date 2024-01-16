@@ -30,6 +30,7 @@ const BlogPost = async ({ params }) => {
             <Image
               src="/User.png"
               alt="img User"
+              priority={true}
               width={40}
               height={40}
               className={styles.avatar}
@@ -40,7 +41,8 @@ const BlogPost = async ({ params }) => {
         <div className={styles.imgContainer}>
           <Image
             src={data.img}
-            alt=""
+            priority={true}
+            alt="img img"
             // fill={true}
             width={500}
             height={300}
