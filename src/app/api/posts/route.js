@@ -18,17 +18,15 @@ export const GET = async (request) => {
   }
 };
 
-
-
 export const POST = async (request) => {
-  const body = await request.json()
+  const body = await request.json();
 
-  const newPost = new Post(body)
+  const newPost = new Post(body);
 
   try {
     await connect();
 
-    await newPost.save()
+    await newPost.save();
 
     return new NextResponse("Post has been created", { status: 201 });
   } catch (err) {

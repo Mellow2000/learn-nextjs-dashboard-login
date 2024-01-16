@@ -23,9 +23,7 @@ const BlogPost = async ({ params }) => {
       <div className={styles.top}>
         <div className={styles.info}>
           <h1 className={styles.title}>{data.title}</h1>
-          <p className={styles.desc}>
-            {data.desc}
-          </p>
+          <p className={styles.desc}>{data.desc}</p>
           <div className={styles.author}>
             <Image
               src="/User.png"
@@ -51,9 +49,7 @@ const BlogPost = async ({ params }) => {
         </div>
       </div>
       <div className={styles.content}>
-        <p className={styles.text}>
-          {data.content}
-        </p>
+        <p className={styles.text}>{data.content}</p>
         <div className={styles.btn}>
           <Button url="/blog" text="Back" />
         </div>

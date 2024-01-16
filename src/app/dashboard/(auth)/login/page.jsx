@@ -13,12 +13,11 @@ const Login = () => {
     if (session.status === "authenticated") {
       router?.push("/dashboard");
     }
-  })
+  });
 
   if (session.status === "loading") {
     return <p>Loading...</p>;
   }
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();

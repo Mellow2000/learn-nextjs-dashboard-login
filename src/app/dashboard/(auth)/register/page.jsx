@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const Register = () => {
   const [err, setErr] = useState(false);
 
-  const router = useRouter()
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,11 +17,10 @@ const Register = () => {
     const password = e.target[2].value;
 
     try {
-
-      const res = await fetch("/api/auth/register",{
-        method:"POST",
-        headers:{
-          "Content-Type":"application/json"
+      const res = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
@@ -30,7 +29,8 @@ const Register = () => {
         }),
       });
 
-      res.status === 201 && router.push("/dashboard/login?success=Account has been created")
+      res.status === 201 &&
+        router.push("/dashboard/login?success=Account has been created");
     } catch (err) {
       setErr(true);
     }

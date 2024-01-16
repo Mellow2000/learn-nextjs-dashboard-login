@@ -11,12 +11,10 @@ async function getData() {
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
-    
   }
 
   return res.json();
 }
-
 
 export async function generateMetadata({ params }) {
   const post = await getData(params.id);
@@ -31,7 +29,11 @@ const Blog = async () => {
   return (
     <div className={styles.maincontainer}>
       {data.map((item) => (
-        <Link href={`/blog/${item._id}`} className={styles.container}>
+        <Link
+          href={`/blog/${item._id}`}
+          className={styles.container}
+          key={item._id}
+        >
           <div className={styles.imageContainer}>
             <Image
               src={item.img}

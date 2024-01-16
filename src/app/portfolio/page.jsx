@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './page.module.css'
-import Link from 'next/link'
+import React from "react";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 const Portfolio = () => {
   return (
@@ -18,7 +18,7 @@ const Portfolio = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

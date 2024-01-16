@@ -41,19 +41,15 @@ const Dashboard = () => {
 
   console.log(data);
 
-
-
   useEffect(() => {
     if (session.status === "unauthenticated") {
       router?.push("/dashboard/login");
     }
-  })
+  });
 
   if (session.status === "loading") {
     return <p>Loading...</p>;
   }
-  
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
