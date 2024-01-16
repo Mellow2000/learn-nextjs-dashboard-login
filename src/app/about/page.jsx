@@ -10,8 +10,9 @@ const About = () => {
       <div className={styles.imgContainer}>
         <Image
           src="https://cdn.pixabay.com/photo/2023/12/08/10/25/church-8437403_1280.jpg"
-          height={800}
-          width={800}
+          height="0"
+          width="0"
+          sizes="100vw"
           priority={true}
           alt="img Images"
           className={styles.img}

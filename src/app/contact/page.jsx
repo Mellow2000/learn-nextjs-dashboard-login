@@ -18,8 +18,9 @@ const Contact = () => {
           <Image
             src="/contact.png"
             alt="img contact"
-            width={500}
-            height={500}
+            width="0"
+            height="0"
+            sizes="100vw"
             priority={true}
             className={styles.image}
           />
