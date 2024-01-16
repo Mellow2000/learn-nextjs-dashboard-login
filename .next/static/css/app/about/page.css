@@ -1,0 +1,206 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/about/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.page_container__eSsIu {
+
+}
+
+.page_imgContainer__FfVYb {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.page_img__ZI6Oh {
+    object-fit: cover;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+
+}
+
+.page_imgText__oV57V {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #53c28b;
+    padding: 5px;
+    color: white;
+}
+
+.page_textContainer__OWOgs {
+    display: flex;
+    gap: 100px;
+}
+
+.page_item__sC5OY {
+    flex: 1 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.page_desc__jYi7G {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .page_container__eSsIu {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+
+    .page_imgText__oV57V {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        background-color: #53c28b;
+        padding: 5px;
+        color: white;
+    }
+
+    .page_imgTitle__sGbxk{
+        font-size: 30px;
+    }
+
+    .page_imgDesc__i8Tf5 {
+        font-size: 16px;
+    }
+
+    .page_textContainer__OWOgs {
+        display: flex;
+        gap: 30px;
+    }
+
+    .page_item__sC5OY {
+        flex: 1 1;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .page_desc__jYi7G {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    }
+  }
+
+
+@media only screen and (max-width: 480px) {
+    .page_container__eSsIu {
+        margin-top: 80px;
+    }
+
+    .page_imgText__oV57V {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background-color: #53c28b;
+        padding: 5px;
+        color: white;
+    }
+
+    .page_imgTitle__sGbxk{
+        font-size: 25px;
+    }
+
+    .page_imgDesc__i8Tf5 {
+        font-size: 12px;
+    }
+
+    .page_textContainer__OWOgs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page_item__sC5OY {
+        flex: 1 1;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page_desc__jYi7G {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: justify;
+        }
+
+    .page_btn__JKjoN {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/button/button.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/* .container {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+    font-size: 16px;
+  } */
+
+
+
+/* CSS */
+.button_container__n9vxy {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #53c28b;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #bbb;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button_container__n9vxy:disabled {
+  pointer-events: none;
+}
+
+.button_container__n9vxy:hover {
+  color: #fff;
+  background-color: #53c28b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button_container__n9vxy:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
