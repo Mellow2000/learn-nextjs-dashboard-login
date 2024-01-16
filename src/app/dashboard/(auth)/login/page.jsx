@@ -9,13 +9,16 @@ const Login = () => {
   const session = useSession();
   const router = useRouter();
 
+  useEffect(() => {
+    if (session.status === "authenticated") {
+      router?.push("/dashboard");
+    }
+  })
+
   if (session.status === "loading") {
     return <p>Loading...</p>;
   }
 
-  if (session.status === "authenticated") {
-    router?.push("/dashboard");
-  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
