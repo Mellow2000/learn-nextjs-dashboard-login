@@ -38,11 +38,11 @@ const About = () => {
             discovered the undoubtable source.
             <br />
             <br />
-            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-            Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &apos;&apos;de Finibus
+            Bonorum et Malorum&apos;&apos; The Extremes of Good and Evil by Cicero,
             written in 45 BC. This book is a treatise on the theory of ethics,
             very popular during the Renaissance. The first line of Lorem Ipsum,
-            "Lorem ipsum dolor sit amet..", comes from a line in section
+            &apos;&apos;Lorem ipsum dolor sit amet..&apos;&apos;, comes from a line in section
             1.10.32.
           </p>
         </div>
@@ -51,7 +51,7 @@ const About = () => {
           <p className={styles.desc}>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
+            humour, or randomised words which don&apos;t look even slightly
             believable. If you are going to use a passage of Lorem Ipsum,
             <br />
             <br /> - Dynamic Websites
