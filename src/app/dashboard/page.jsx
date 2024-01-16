@@ -94,7 +94,7 @@ const Dashboard = () => {
             : data?.map((post) => (
                 <div className={styles.post} key={post._id}>
                   <div className={styles.imgContainer}>
-                    <Image src={post.img} alt="" width={200} height={100} className={styles.img} />
+                    <Image src={post.img} alt="img dashboard" width={200} height={100} className={styles.img} />
                   </div>
                   <h2 className={styles.postTitle}>{post.title}</h2>
                   <span

@@ -69,7 +69,7 @@ const Navbar = () => {
             <div className={styles.author}>
               <Image
                 src="/User.png"
-                alt=""
+                alt="img User"
                 width={28}
                 height={28}
                 className={styles.avatar}
